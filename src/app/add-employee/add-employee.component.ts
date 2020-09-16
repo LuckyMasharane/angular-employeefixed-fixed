@@ -10,7 +10,7 @@ import { Validators } from '@angular/forms';
   styleUrls: ['./add-employee.component.css']
 })
 export class AddEmployeeComponent implements OnInit {
-     message: string = "Employee Details"
+    message: string = "Employee Details"
     public contactForm: FormGroup;
 
   constructor(private _formBuilder: FormBuilder, private employeeService: EmployeesService,) { }
