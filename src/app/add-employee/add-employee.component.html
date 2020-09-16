@@ -5,8 +5,50 @@
   </head>
   <body>
     <div>
-      <h3>Adding New Employee</h3>
-      
+      <h2>Add New Employee</h2>
+      <div class="container">
+      <form [formGroup]="contactForm" (submit)="onSubmit()" >
+        <div class="form-group">
+          <div class="row">
+            <div class="col-md-6">
+              <mat-form-field >
+                <mat-label>Name</mat-label>
+                <input matInput formControlName="empName">
+              </mat-form-field>
+            </div>
+            <div class="col-md-6">
+              <mat-form-field >
+                <mat-label>Surname</mat-label>
+                <input matInput formControlName="empSurname">
+              </mat-form-field>
+            </div>
+          </div>
+              <div class="row">
+                  <div class="col-md-6">
+                  <mat-form-field >
+            <mat-label>Job Position</mat-label>
+            <input matInput formControlName="empPosition">
+          </mat-form-field> 
+                  </div>
+          <div class="col-md-6">
+        <mat-form-field >
+            <mat-label>Age</mat-label>
+            <input matInput type="number" class="example-right-align" formControlName="empAge">
+
+          </mat-form-field>
+          </div>
+              </div>
+                <div class="row">
+                  <div class="col-md-6">
+                  <button mat-raised-button  type="submit" color="accent">
+                  <i class="material-icons">save</i>
+                  </button>
+                  </div>
+                </div>
+              </div>   
+            
+        </form>
+      </div>
     </div>
   </body>
 </html>
