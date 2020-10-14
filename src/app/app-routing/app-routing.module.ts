@@ -12,7 +12,7 @@ const appRouting: Routes = [
   { path: 'employee', component: EmployeeComponent },
   { path: 'department', component: DepartmentComponent },
   { path: 'projects', component: ProjectsComponent },
-  { path: 'add-employee', component: AddEmployeeComponent}
+  { path: 'employee/add-employee', component: AddEmployeeComponent}
   ];
 
 
