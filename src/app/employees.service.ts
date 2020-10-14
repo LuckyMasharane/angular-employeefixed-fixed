@@ -35,7 +35,7 @@ export class EmployeesService {
   }
   addEmployee(employee: Employee) {
     this.employeesList.push({
-      id: this.employeesList.length ,
+      id: this.employeesList.length +1 ,
       empName: employee.empName,
       empSurname:employee.empSurname,
       empPosition: employee.empPosition,
